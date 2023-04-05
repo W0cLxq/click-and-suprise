@@ -1,0 +1,15 @@
+.click {
+    border: none;
+    width: 10%;
+    height: 5%;
+    background-image: linear-gradient(to right, #DDFFBB,#A4BC92);
+    color: #89375F;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    cursor: pointer;
+}
+
+.click:focus {
+    background-image: linear-gradient(to left, #DDFFBB,#A4BC92);
+}

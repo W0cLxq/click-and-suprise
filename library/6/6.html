@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .clickButton {
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            border-left: 10px;
+            border-top: 10px;
+            border-right: 10px;
+            border-style: solid;
+            border-radius: 50px;
+            width: 10%;
+            height: 50px;
+            position: absolute;
+            left: 45%;
+            top: 45%;
+        }
+        label {
+            position: absolute;
+            left: 45%;
+            top:43%;
+        }
+    </style>
+    <title>Clicker Game!</title>
+</head>
+<body>
+    <a href="../../click.html"> Go BACK</a>
+    <label id="clickNum">0</label>
+    <button class="clickButton" onclick="clickerGame();">Click</button>
+    <script>
+        const cl = document.getElementById("clickNum");
+        var clickup = 0;
+
+        function clickerGame() {
+            clickup++;
+            cl.innerText = clickup * clickup;
+        }
+    </script>
+</body>
+</html>
