@@ -12,8 +12,8 @@ function hackerApp() {
         jokejump.style.width = "100%"
         jokejump.style.height = "900px"
         jokejump.style.visibility = "visible";
-        setTimeout(() => {
-            document.location.href = "../../click.html"
-        }, 3000);
     }, 1000);
+    setTimeout(() => {
+        document.location.href = "../../click.html"
+    }, 4000);
 }
